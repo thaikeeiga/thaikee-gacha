@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#204bce">
+  <title>THAI KEE MINI GACHA · 一颗小小的快乐</title>
+  <link rel="stylesheet" href="style.css"><script src="quiz-data.js" defer></script><script src="game.js" defer></script><script src="card-assets.js" defer></script><script src="promotion.js" defer></script><script src="quiz.js" defer></script>
+</head>
+<body class="language-entry">
+  <header><a class="brand" href="./index.html" aria-label="THAI KEE 首页">THAI KEE<span>添记 · LITTLE JOYS EVERYDAY</span></a><span class="demo-tag"><i></i> JUST FOR FUN</span></header>
+  <main>
+    <section class="intro"><div class="eyebrow">A LITTLE TWIST, A LITTLE HAPPINESS</div><h1>MINI <span>GACHA</span><svg viewBox="0 0 50 50" aria-hidden="true"><path d="M25 2Q26 24 48 25Q26 26 25 48Q24 26 2 25Q24 24 25 2"/></svg></h1><p>转一转，把小小的快乐带回家。</p></section>
+    <section id="welcome" class="quiz-panel"></section>
+    <section id="quiz" class="quiz-panel" hidden aria-label="Snack personality quiz"></section>
+    <div id="machine-stage" hidden>
+    <section class="playground" aria-label="扭蛋游戏">
+      <aside class="note note-left"><span class="tiny-star">✦</span><p>Good things<br>come in<br><em>little capsules.</em></p><svg viewBox="0 0 100 65" aria-hidden="true"><path d="M4 5Q15 60 87 35M70 28L89 35L78 49"/></svg></aside>
+      <div class="machine-wrap">
+        <div class="machine" id="machine">
+          <div class="machine-top"><span>THAI KEE</span><span class="top-flower">✿</span><small>HAPPINESS INSIDE</small></div>
+          <div class="globe"><div class="globe-shine"></div><div id="capsules" class="capsules" aria-hidden="true"></div><div class="globe-label">mini joys<br><b>大大开心</b><span>✦</span></div></div>
+          <div class="machine-body"><div class="pink-stripe"><span>ミニガチャ</span><b>MINI GACHA CLUB</b><span>★</span></div>
+            <div class="controls"><div class="price-badge">100%<small>HAPPINESS</small></div><button id="turn" class="knob" aria-label="转动旋钮，抽取一颗扭蛋"><span></span></button><div class="turn-label">TURN<br>ME!<span>↻</span></div></div>
+            <div class="outlet"><div class="outlet-inner"><button id="prize" class="prize" aria-label="点击打开扭蛋" hidden><span></span></button></div><span class="outlet-label">YOUR LITTLE SURPRISE</span></div><div class="machine-bottom"><span>✦ A TINY TREAT FOR YOU ✦</span><i></i></div>
+          </div><div class="feet"><i></i><i></i></div>
+        </div><div class="floor-shadow"></div>
+      </div>
+      <aside class="note note-right"><div class="round-stamp">9 LITTLE<br><b>FOODIES</b><br>TO MEET <span>✦</span></div><p>今天会遇见<br>哪位美味朋友？</p><span class="floating-star">✧</span></aside>
+    </section>
+    <section class="game-guide"><div class="status" id="status" role="status" aria-live="polite">准备好了吗？转动旋钮，遇见你的美味朋友！</div><button id="play" class="primary">LET’S PLAY <span>↗</span></button><div class="steps"><span><b>01</b> 转动旋钮</span><i>·</i><span><b>02</b> 点击扭蛋</span><i>·</i><span><b>03</b> 收获快乐</span></div></section>
+    </div>
+    <section class="collection"><div class="collection-heading"><div><span class="eyebrow">MEET THE LITTLE FOODIES</span><h2>小小美味图鉴 <span>Collect a little happiness.</span></h2></div><span id="count">0 / 9 COLLECTED</span></div><div class="cards" id="cards"></div><p class="collection-note">不同答案，发现不同的自己。</p></section>
+  </main>
+  <footer><span>THAI KEE MINI GACHA</span><p>仅供娱乐试玩 · 不涉及付款或真实奖品</p><span>MADE OF LITTLE JOYS ♡</span></footer>
+  <dialog id="reveal"><div class="result"><button class="close" id="close" aria-label="关闭奖励弹窗">×</button><div class="eyebrow" id="rarity">A LITTLE FRIEND FOUND YOU!</div><div class="result-art" id="result-art"></div><small id="result-image-note" hidden></small><span class="result-number" id="result-number"></span><h2 id="result-name"></h2><p id="result-description"></p><div id="personality-tags" class="personality-tags"></div><div id="new-tag" class="new-tag">NEW FRIEND · 新朋友加入图鉴</div><button class="primary" id="again">PLAY AGAIN <span>↻</span></button><small id="result-footnote">一颗小扭蛋，一份好心情。</small></div></dialog>
+</body>
+</html>
